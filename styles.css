@@ -1,129 +1,129 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 *, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: inherit;
-    font-weight: inherit;
-    color: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    align-items: center;
-    padding: 20vmin;
-    background: linear-gradient(135deg, #8052ec, #d161ff);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    color: #111111;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  background: linear-gradient(135deg, #8052ec, #d161ff) no-repeat fixed;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #111111;
 }
 
 #container {
-    width: 40%;
-    min-width: 450px;
-    padding: 2%;
-    border: 2px solid white;
-    border-radius: 7px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 40%;
+  min-width: 450px;
+  margin: 10vmin 0;
+  padding: 2%;
+  border: 2px solid white;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #title {
-    color: white;
-    font-weight: bolder;
+  color: white;
+  font-weight: bolder;
 }
 
 #new-task {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 #new-task, #task-list {
-    width: 100%;
-    background-color: white;
-    border-radius: 5px;
-    padding: 30px 20px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
 
 #new-task input {
-    width: 70%;
-    padding: 8px;
-    border: 2px solid #d1d3d4;
-    border-radius: 5px;
-    outline: none;
+  width: 70%;
+  padding: 8px;
+  border: 2px solid #d1d3d4;
+  border-radius: 5px;
+  outline: none;
 }
 
 #new-task input:hover, #new-task input:focus {
-    border-color: #9070e7;
+  border-color: #9070e7;
 }
 
-#new-task button {
-    width: 20%;
-    float: right;
-    background-color: #9070e7;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    outline: none;
+#new-task-btn {
+  width: 20%;
+  float: right;
+  background-color: #9070e7;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .task {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #d1d3d4;
-    padding: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #d1d3d4;
+  padding: 10px 0;
 }
 
 .task-content {
-    width: 80%;
-    font-size: 13px;
-    overflow-wrap: break-word;
+  width: 80%;
+  font-size: 13px;
+  overflow-wrap: break-word;
 }
 
 .remove-task-btn {
-    color: white;
-    background-color: #9070e7;
-    border: none;
-    cursor: pointer;
-    padding: 7px 10px;
-    border-radius: 2px;
-    outline: none;
+  color: white;
+  background-color: #9070e7;
+  border: none;
+  cursor: pointer;
+  padding: 7px 10px;
+  border-radius: 2px;
+  outline: none;
 }
 
 
-#new-task button:hover, 
-#new-task button:focus-visible,
-.remove-task-btn:hover, 
-.remove-task-btn:focus-visible, 
+#new-task-btn:hover, 
+#new-task-btn:focus-visible,
 #clear-tasks-btn:hover,
-#clear-tasks-btn:focus-visible {
-    background-color: #d161ff;
-    outline: 2px solid #d161ff;
+#clear-tasks-btn:focus-visible,
+.remove-task-btn:hover, 
+.remove-task-btn:focus-visible {
+  background-color: #d161ff;
+  outline: 2px solid #d161ff;
 }
 
 .dragging {
-    opacity: 0.65;
-    cursor: move;
+  opacity: 0.65;
+  cursor: move;
 }
 
 #clear-tasks-btn {
-    margin-top: 10px;
-    background-color: #8052ec;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 5px 15px;
-    border-radius: 5px;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
-    display: none;
+  margin-top: 10px;
+  background-color: #8052ec;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+  display: none;
 }
